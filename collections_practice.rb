@@ -51,7 +51,7 @@ def count_elements(arr)
       output_arr << element
   elsif output_arr.include?(element)
       output_arr.map do |el|
-        el[:count] + 1
+        el[:count] += 1
       end
     end
   end
