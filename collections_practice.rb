@@ -48,7 +48,7 @@ def count_elements(arr)
   arr.each do | element |
     counter = element[:counter] = 0
     if output_arr.include?(element) == false
-      counter++
+      counter += 1
       output_arr << element
     end
   end
