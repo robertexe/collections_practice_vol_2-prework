@@ -26,3 +26,11 @@ def contain_a(arr)
   end
   return output_arr
 end
+
+def first_wa(hash)
+  hash.each do |key, value|
+    if key.starts_with('wa') or value.starts_with('wa')
+      return key or value
+    end
+  end
+end
