@@ -59,5 +59,10 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  return data
+  data.each do |k, hash|
+    if k == keys[:first_name]
+      k[:first_name] = keys[:first_name]
+    end
+  end
+  data
 end
