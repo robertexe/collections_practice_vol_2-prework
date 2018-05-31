@@ -52,7 +52,10 @@ def count_elements(arr)
     if !output.include?(element)
       output << element
     elsif output.include?(element)
-      output[element][:count] = 3
+      output.each do |name|
+        if element == name
+          element[:count] += 1
+      end
     end
   end
   output
