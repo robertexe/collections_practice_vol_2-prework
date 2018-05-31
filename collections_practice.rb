@@ -44,19 +44,11 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  output = []
-
-  arr.each do |element|
-    if !element.include?(element[:count])
-      element[:count] = 1
-
-  elsif !output.include?(element)
-      output << element
-  # elsif output.include?(element)
-  #     output.each do | el |
-  #       el[:count].next
-  #     end
+  output_arr = [];
+  arr.each do | element |
+    if output_arr.include?(element) == false
+      element[:counter] = 1
+      output_arr << element
     end
-  end
-  output
+  output_arr
 end
