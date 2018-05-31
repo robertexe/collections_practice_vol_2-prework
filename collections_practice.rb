@@ -3,3 +3,16 @@ def begins_with_r(tools)
     |word| word[0] == "r"
   }
 end
+
+def contain_a(arr)
+  output_arr = [];
+  arr.each do |element|
+    word = element.split('')
+     if word.any? {
+      |letter| letter == 'a' or letter == 'A'
+    } == true
+      output_arr << word.join('')
+    end
+  end
+  return output_arr
+end
