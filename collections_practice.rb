@@ -72,3 +72,15 @@ def merge_data(keys, data)
   end
   return keys
 end
+
+def find_cool(cool)
+  i = 0
+  while i < cool.length do
+    cool[i].each do | key, values |
+      if values == "cool"
+        return cool[i]
+      end
+    end
+    i+=1
+  end
+end
