@@ -50,6 +50,7 @@ def count_elements(arr)
       output << element
     elsif output.include?(element)
       element[count] += 1 or 1
+    end
   end
   output
 end
