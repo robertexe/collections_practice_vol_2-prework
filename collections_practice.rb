@@ -47,7 +47,7 @@ def count_elements(arr)
   output = []
   arr.each do |element|
     if !output.include?(element)
-      output << element[:count] = 0
+      output << element
 
     elsif output.include?(element)
       element[:count] += 1
