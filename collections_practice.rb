@@ -50,5 +50,6 @@ def count_elements(arr)
       element[:counter] = 1
       output_arr << element
     end
+  end
   output_arr
 end
