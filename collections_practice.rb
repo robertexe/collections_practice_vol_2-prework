@@ -77,7 +77,9 @@ def find_cool(cool)
   i = 0
   while i < cool.length do
     cool[i].collect do | key, values |
-      return values == "cool"
+      if values == "cool"
+        return key
+      end
     end
     i+=1
   end
