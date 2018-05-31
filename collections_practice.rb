@@ -63,10 +63,7 @@ def merge_data(keys, data)
   while i < keys.length
     data.each do |element|
       element.each do |ka, va|
-
-        if keys[i].has_value?(ka)
           keys[i].merge!(va)
-        end
       end
     end
   i+=1
