@@ -60,13 +60,14 @@ end
 
 def merge_data(keys, data)
   i = 0
+  merged = []
   while i < keys.length
     data.each do |element|
       element.each do |ka, va|
-          keys[i].merge(va)
+          merged << keys[i].merge(va)
       end
     end
   i+=1
   end
-  return keys
+  return merged
 end
