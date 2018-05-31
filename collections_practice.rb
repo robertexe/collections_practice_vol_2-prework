@@ -46,12 +46,12 @@ end
 def count_elements(arr)
   output_arr = [];
   arr.each do | element |
-    counter = element[:counter] = 1
+    counter = element[:count] = 1
     if output_arr.include?(element) == false
       output_arr << element
   elsif output_arr.include?(element)
       output_arr.each do |el|
-        return el
+        return el[:count]
       end
     end
   end
