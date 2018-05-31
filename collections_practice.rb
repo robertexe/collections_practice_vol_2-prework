@@ -22,6 +22,7 @@ def contain_a(arr)
   arr.collect do |element|
     if element.include?("a")
       output_arr << element
+    end
   end
-  return output_arr 
+  return output_arr
 end
