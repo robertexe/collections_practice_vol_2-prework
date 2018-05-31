@@ -47,10 +47,11 @@ def count_elements(arr)
   output = []
 
   arr.each do |element|
-
+    if !element.include?(element[:count])
+      element[:count] = 1
+    end
     element.each do |key, value|
-      return key
     end
   end
-  output
+  arr
 end
