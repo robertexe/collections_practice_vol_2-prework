@@ -57,6 +57,7 @@ def count_elements(arr)
           if key == :count
             value += 1
           end
+        end
       end
     end
   end
