@@ -52,7 +52,7 @@ def count_elements(arr)
     if !output.include?(element)
       output << element
     elsif output.include?(element)
-      element[:count].next
+      output[element[:count]] = 3
     end
   end
   output
