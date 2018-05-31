@@ -59,5 +59,17 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  return keys.class
+  i = 0
+  while i < keys.length
+    data.each do |element|
+      element.each do |ka, va|
+
+        if keys[i].has_value?(ka)
+          keys[i].merge!(va)
+        end
+      end
+    end
+  i+=1
+  end
+  return keys
 end
