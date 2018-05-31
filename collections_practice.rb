@@ -55,6 +55,8 @@ def count_elements(arr)
       output.each do |name|
         if element == name
           element[:count] += 1
+
+        end
       end
     end
   end
