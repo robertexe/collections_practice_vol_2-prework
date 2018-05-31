@@ -62,7 +62,7 @@ def merge_data(keys, data)
   data.each do |k, hash|
     puts k
     if k == keys[:first_name]
-      k[:first_name] = keys[:first_name]
+    return 'hello'
     end
   end
   data
