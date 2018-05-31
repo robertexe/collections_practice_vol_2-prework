@@ -50,7 +50,7 @@ def count_elements(arr)
       output << element
 
     elsif output.include?(element)
-      element[:count] = 1
+      element = {:count => 1}
     end
   end
   output
