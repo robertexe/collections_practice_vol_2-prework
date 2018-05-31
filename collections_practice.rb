@@ -81,6 +81,7 @@ def find_cool(cool)
       if values == "cool"
         output << cool[i]
       return output
+      end
     end
     i+=1
   end
