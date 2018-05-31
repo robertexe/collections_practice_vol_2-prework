@@ -96,6 +96,7 @@ def organize_schools(schools)
       else
         output[:location] << key
       end
+    end
   end
   output
 end
