@@ -29,9 +29,9 @@ end
 
 def first_wa(hash)
   hash.each do |key, value|
-    if key.starts_with?('wa')
+    if key.start_with?('wa')
       return key
-    elsif value.starts_with?('wa')
+    elsif value.start_with?('wa')
       return value
     end
   end
