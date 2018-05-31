@@ -50,7 +50,7 @@ def count_elements(arr)
     i+=1
     if !output.include?(element)
       output << element
-
+      output << i
 
 
     elsif output.include?(element)
