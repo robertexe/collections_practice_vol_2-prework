@@ -50,7 +50,9 @@ def count_elements(arr)
     if output_arr.include?(element) == false
       output_arr << element
   elsif output_arr.include?(element)
-      return element
+      output_arr.each do |el|
+        return el[:count]
+      end
     end
   end
   output_arr
