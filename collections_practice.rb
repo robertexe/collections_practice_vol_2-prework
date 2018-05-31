@@ -41,5 +41,4 @@ def remove_non_strings(arr)
   arr.delete_if {
     |element| element.class != String
   }
-  arr
 end
