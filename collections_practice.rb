@@ -42,3 +42,11 @@ def remove_non_strings(arr)
     |element| element.class != String
   }
 end
+
+def count_elements(arr)
+  counter = 0;
+  arr.each do |element|
+    counter += 1
+  end
+  counter
+end
