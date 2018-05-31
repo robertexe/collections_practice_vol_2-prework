@@ -30,7 +30,7 @@ end
 def first_wa(hash)
   hash.each do |key, value|
     if key.starts_with('wa')
-      return key 
+      return key
     elsif value.starts_with('wa')
       return value
     end
