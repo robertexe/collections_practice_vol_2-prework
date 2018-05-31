@@ -49,7 +49,10 @@ def count_elements(arr)
     if !output.include?(element)
       output << element
     elsif output.include?(element)
-      element[:count] += 1 or 1
+      element[:count] = 1
+      if count = 1
+        count+=1
+      end
     end
   end
   output
