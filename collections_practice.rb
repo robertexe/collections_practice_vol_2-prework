@@ -53,7 +53,7 @@ def count_elements(arr)
       output[i] = {:count => 1}
 
     elsif output.include?(element)
-      
+
     end
   end
   output
