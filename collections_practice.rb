@@ -52,10 +52,11 @@ def count_elements(arr)
 
   elsif !output.include?(element)
       output << element
-    end
   elsif output.include?(element)
       output.each do | el |
         el[:count].next
+      end
+    end
   end
-
+  output
 end
