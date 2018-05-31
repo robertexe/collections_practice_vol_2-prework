@@ -53,5 +53,5 @@ def count_elements(arr)
       output[element[:count] = 0]
     end
   end
-  output
+  output[0]
 end
