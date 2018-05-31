@@ -49,9 +49,9 @@ def count_elements(arr)
     counter = element[:counter] = 1
     if output_arr.include?(element) == false
       output_arr << element
-
   elsif output_arr.include?(element)
       return element
+    end
   end
   output_arr
 end
