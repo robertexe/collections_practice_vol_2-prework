@@ -36,3 +36,10 @@ def first_wa(hash)
     end
   end
 end
+
+def remove_non_strings(arr)
+  arr.delete_if {
+    |element| element.class != string
+  }
+  arr
+end
