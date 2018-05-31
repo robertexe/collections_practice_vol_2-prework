@@ -51,13 +51,8 @@ def count_elements(arr)
     element[:count] = 1
     if !output.include?(element)
       output << element
-    elsif output.include?(element)
-      output.each do |name|
-        if element == name
-          element[:count] += 1
-
-        end
-      end
+    elsif output.has_key?(:count)
+      element[:count].next
     end
   end
   output
